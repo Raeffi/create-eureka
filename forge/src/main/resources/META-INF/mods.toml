@@ -1,13 +1,12 @@
 modLoader = "javafml"
 loaderVersion = "[${forge_version},)"
-#issueTrackerURL = ""
 license = "CC0-1.0"
 
 [[mods]]
 modId = "create_eureka"
 version = "${version}"
 displayName = "Create: Eureka!"
-authors = "Me!"
+authors = "FixerSchis"
 description = '''
 Integration between Create Mod and Valkyrien Skies: Eureka!
 '''
