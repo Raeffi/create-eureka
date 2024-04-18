@@ -4,30 +4,30 @@ loaderVersion = "[${forge_version},)"
 license = "Insert License Here"
 
 [[mods]]
-modId = "examplemod"
+modId = "create_eureka"
 version = "${version}"
-displayName = "Example Mod"
+displayName = "Create: Eureka!"
 authors = "Me!"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+Integration between Create Mod and Valkyrien Skies: Eureka!
 '''
 logoFile = "icon.png"
 
-[[dependencies.examplemod]]
+[[dependencies.create_eureka]]
 modId = "forge"
 mandatory = true
 versionRange = "[${forge_version},)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.create_eureka]]
 modId = "minecraft"
 mandatory = true
 versionRange = "${minecraft_version}"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.create_eureka]]
 modId="create"
 mandatory=true
 versionRange="${create_version}"

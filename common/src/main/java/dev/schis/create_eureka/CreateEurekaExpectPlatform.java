@@ -1,8 +1,8 @@
-package net.examplemod;
+package dev.schis.create_eureka;
 
 import dev.architectury.injectables.annotations.ExpectPlatform;
 
-public class ExampleExpectPlatform {
+public class CreateEurekaExpectPlatform {
     /**
      * an example of {@link ExpectPlatform}.
      * <p>
@@ -10,9 +10,9 @@ public class ExampleExpectPlatform {
      * platform sub-package, with its class suffixed with {@code Impl}.
      * <p>
      * Example:
-     * Expect: net.examplemod.ExampleExpectPlatform#platformName()
-     * Actual Fabric: net.examplemod.fabric.ExampleExpectPlatformImpl#platformName()
-     * Actual Forge: net.examplemod.forge.ExampleExpectPlatformImpl#platformName()
+     * Expect: dev.schis.create_eureka.ExampleExpectPlatform#platformName()
+     * Actual Fabric: dev.schis.create_eureka.fabric.ExampleExpectPlatformImpl#platformName()
+     * Actual Forge: dev.schis.create_eureka.forge.ExampleExpectPlatformImpl#platformName()
      * <p>
      * <a href="https://plugins.jetbrains.com/plugin/16210-architectury">You should also get the IntelliJ plugin to help with @ExpectPlatform.</a>
      */

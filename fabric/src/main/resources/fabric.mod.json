@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "create_eureka",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Create: Eureka!",
+  "description": "Integration between Create Mod and Valkyrien Skies: Eureka!",
   "authors": [
     "Me!"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://schis.dev/",
+    "sources": "https://github.com/FixerSchis/create-eureka"
   },
-  "license": "Insert License Here",
-  "icon": "assets/examplemod/icon.png",
+  "license": "CC0",
+  "icon": "assets/create_eureka/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.examplemod.fabric.ExampleModFabric"
+      "dev.schis.create_eureka.fabric.CreateEurekaModFabric"
     ]
   },
   "mixins": [
-    "examplemod.mixins.json",
-    "examplemod-common.mixins.json"
+    "create_eureka.mixins.json",
+    "create_eureka-common.mixins.json"
   ],
   "depends": {
     "minecraft": "${minecraft_version}",
