@@ -28,6 +28,27 @@ subprojects {
                 includeGroup("com.jozufozu.flywheel")
             }
         }
+		exclusiveContent {
+			forRepository {
+				maven {
+					url "https://cursemaven.com"
+				}
+			}
+			filter {
+				includeGroup "curse.maven"
+			}
+		}
+		maven {
+			url = 'https://maven.valkyrienskies.org'
+			content {
+				includeGroup("org.valkyrienskies.eureka")
+				includeGroup("org.valkyrienskies")
+				includeGroup("org.valkyrienskies.core")
+				includeGroup("org.mapstruct")
+				includeGroup("dev.cafeteria")
+				includeGroup("com.github.Rubydesic")
+			}
+		}
     }
 
     dependencies {

@@ -32,3 +32,10 @@ license = "CC0-1.0"
     versionRange = "[${create_version},)"
     ordering = "NONE"
     side = "BOTH"
+
+[[dependencies.create_eureka]]
+    modId = "vs_eureka"
+    mandatory = true
+    versionRange = "[${eureka_version},)"
+    ordering = "NONE"
+    side = "BOTH"

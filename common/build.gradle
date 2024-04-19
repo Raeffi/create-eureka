@@ -15,6 +15,7 @@ repositories {
     maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" } // Forge Config API Port
     maven { url = "https://maven.jamieswhiteshirt.com/libs-release" } // Reach Entity Attributes
     maven { url = "https://jitpack.io/" } // Mixin Extras, Fabric ASM
+
 }
 
 dependencies {
@@ -27,6 +28,12 @@ dependencies {
     // All dependencies except Flywheel and Registrate are NOT safe to use!
     // Flywheel and Registrate must also be used carefully due to differences.
     modCompileOnly("com.simibubi.create:create-fabric-${minecraft_version}:${create_fabric_version}")
+
+    modCompileOnly("org.valkyrienskies.eureka:eureka-1201-common:${eureka_version}")
+    compileOnly("org.valkyrienskies.core:api:${vs_core_version}")
+    compileOnly("org.valkyrienskies.core:api-game:${vs_core_version}")
+    compileOnly("org.valkyrienskies.core:util:${vs_core_version}")
+    compileOnly("org.valkyrienskies.core:impl:${vs_core_version}")
 }
 
 publishing {

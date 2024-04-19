@@ -47,6 +47,8 @@ dependencies {
     // Create - dependencies are added transitively
     modImplementation("com.simibubi.create:create-fabric-${minecraft_version}:${create_fabric_version}")
 
+    modImplementation("org.valkyrienskies.eureka:eureka-1201-fabric:${eureka_version}")
+
     // Development QOL
     modLocalRuntime("maven.modrinth:lazydfu:${lazydfu_version}")
     modLocalRuntime("com.terraformersmc:modmenu:${modmenu_version}")
@@ -75,7 +77,8 @@ processResources {
             "fabric_loader_version", fabric_loader_version,
             "fabric_api_version", fabric_api_version,
             "minecraft_version", minecraft_version,
-            "create_version", create_fabric_version // on fabric, use the entire version, unlike forge
+            "create_version", create_fabric_version, // on fabric, use the entire version, unlike forge
+            "eureka_version", eureka_version.substring(0, eureka_version.indexOf('+'))
     )
     properties.forEach((k, v) -> inputs.property(k, v))
 

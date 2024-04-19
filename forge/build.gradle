@@ -34,6 +34,7 @@ repositories {
             includeGroup("com.simibubi.create")
         }
     }
+	maven { url = 'https://thedarkcolour.github.io/KotlinForForge/' }
 }
 
 dependencies {
@@ -46,6 +47,8 @@ dependencies {
     modImplementation("com.tterrag.registrate:Registrate:${registrate_forge_version}")
     modImplementation("com.jozufozu.flywheel:flywheel-forge-${flywheel_forge_minecraft_version}:${flywheel_forge_version}")
 
+    modImplementation("org.valkyrienskies.eureka:eureka-1201-forge:${eureka_version}")
+
     // Development QOL
     modLocalRuntime("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")
 }
@@ -56,7 +59,8 @@ processResources {
             "version", version,
             "forge_version", forge_version.split("\\.")[0], // only specify major version of forge
             "minecraft_version", minecraft_version,
-            "create_version", create_forge_version.split("-")[0] // cut off build number
+            "create_version", create_forge_version.split("-")[0], // cut off build number
+            "eureka_version", eureka_version.substring(0, eureka_version.indexOf('+'))
     )
     properties.forEach((k, v) -> inputs.property(k, v))
 
