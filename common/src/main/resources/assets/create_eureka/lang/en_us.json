@@ -1,0 +1,5 @@
+{
+    "block.create_eureka.rotation_engine": "Rotation Engine",
+    "block.create_eureka.rotation_engine.tooltip.summary": "A block that powers Eureka Ships with Rotational Energy",
+    "itemGroup.create_eureka.main": "Create: Eureka!"
+}

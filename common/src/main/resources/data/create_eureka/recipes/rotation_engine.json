@@ -1,0 +1,26 @@
+{
+    "type": "create:mechanical_crafting",
+    "acceptMirrored": true,
+    "key": {
+      "E": {
+        "item": "vs_eureka:engine"
+      },
+      "P": {
+        "item": "create:precision_mechanism"
+      },
+      "S": {
+        "item": "create:shaft"
+      },
+      "C": {
+        "item": "create:brass_casing"
+      }
+    },
+    "pattern": [
+      " CCC ",
+      "SPEPS",
+      " CCC "
+    ],
+    "result": {
+      "item": "create_eureka:rotation_engine"
+    }
+  }

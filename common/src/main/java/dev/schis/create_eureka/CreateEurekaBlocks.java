@@ -4,6 +4,7 @@ import static com.simibubi.create.foundation.data.ModelGen.customItemModel;
 import static com.simibubi.create.foundation.data.TagGen.axeOrPickaxe;
 import static dev.schis.create_eureka.content.RotationEngineBlock.HEAT;
 
+import com.simibubi.create.content.kinetics.BlockStressDefaults;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.data.SharedProperties;
 import com.tterrag.registrate.util.entry.BlockEntry;
@@ -25,6 +26,7 @@ public class CreateEurekaBlocks {
 					.strength(3.5f)
 					.lightLevel(s -> s.getValue(HEAT) * 3))
 			.addLayer(() -> RenderType::cutoutMipped)
+			.transform(BlockStressDefaults.setImpact(16.0f))
 			.transform(axeOrPickaxe())
 			.item()
 			.transform(customItemModel())
