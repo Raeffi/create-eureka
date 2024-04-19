@@ -1,0 +1,47 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/orientable",
+	"textures": {
+		"top": "create_eureka:block/engine_top",
+		"front": "create_eureka:block/engine_front",
+		"back": "create_eureka:block/engine_back",
+		"side": "create_eureka:block/engine_side",
+		"inset": "create_eureka:block/engine_inset"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#front"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#back"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#top"}
+			}
+		},
+		{
+			"from": [16, 2, 2],
+			"to": [15, 14, 14],
+			"faces": {
+				"north": {"uv": [15, 2, 16, 14], "texture": "#inset"},
+				"east": {"uv": [2, 2, 14, 14], "texture": "#inset"},
+				"south": {"uv": [0, 2, 1, 14], "texture": "#inset"},
+				"up": {"uv": [2, 0, 14, 1], "texture": "#inset"},
+				"down": {"uv": [2, 15, 14, 16], "texture": "#inset"}
+			}
+		},
+		{
+			"from": [1, 2, 2],
+			"to": [0, 14, 14],
+			"faces": {
+				"north": {"uv": [0, 2, 1, 14], "rotation": 180, "texture": "#inset"},
+				"south": {"uv": [15, 2, 16, 14], "texture": "#inset"},
+				"west": {"uv": [2, 2, 14, 14], "rotation": 90, "texture": "#inset"},
+				"up": {"uv": [2, 0, 14, 1], "texture": "#inset"},
+				"down": {"uv": [2, 15, 14, 16], "texture": "#inset"}
+			}
+		}
+	]
+}

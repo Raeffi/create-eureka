@@ -1,0 +1,6 @@
+{
+	"parent": "create_eureka:block/rotation_engine",
+	"textures": {
+		"front": "create_eureka:block/engine_front_3"
+	}
+}

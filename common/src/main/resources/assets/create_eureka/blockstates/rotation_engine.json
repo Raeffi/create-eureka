@@ -1,0 +1,79 @@
+{
+    "variants": {
+      "facing=east,heat=0": {
+        "model": "create_eureka:block/rotation_engine",
+        "y": 90
+      },
+      "facing=east,heat=1": {
+        "model": "create_eureka:block/rotation_engine_1",
+        "y": 90
+      },
+      "facing=east,heat=2": {
+        "model": "create_eureka:block/rotation_engine_2",
+        "y": 90
+      },
+      "facing=east,heat=3": {
+        "model": "create_eureka:block/rotation_engine_3",
+        "y": 90
+      },
+      "facing=east,heat=4": {
+        "model": "create_eureka:block/rotation_engine_4",
+        "y": 90
+      },
+      "facing=north,heat=0": {
+        "model": "create_eureka:block/rotation_engine"
+      },
+      "facing=north,heat=1": {
+        "model": "create_eureka:block/rotation_engine_1"
+      },
+      "facing=north,heat=2": {
+        "model": "create_eureka:block/rotation_engine_2"
+      },
+      "facing=north,heat=3": {
+        "model": "create_eureka:block/rotation_engine_3"
+      },
+      "facing=north,heat=4": {
+        "model": "create_eureka:block/rotation_engine_4"
+      },
+      "facing=south,heat=0": {
+        "model": "create_eureka:block/rotation_engine",
+        "y": 180
+      },
+      "facing=south,heat=1": {
+        "model": "create_eureka:block/rotation_engine_1",
+        "y": 180
+      },
+      "facing=south,heat=2": {
+        "model": "create_eureka:block/rotation_engine_2",
+        "y": 180
+      },
+      "facing=south,heat=3": {
+        "model": "create_eureka:block/rotation_engine_3",
+        "y": 180
+      },
+      "facing=south,heat=4": {
+        "model": "create_eureka:block/rotation_engine_4",
+        "y": 180
+      },
+      "facing=west,heat=0": {
+        "model": "create_eureka:block/rotation_engine",
+        "y": 270
+      },
+      "facing=west,heat=1": {
+        "model": "create_eureka:block/rotation_engine_1",
+        "y": 270
+      },
+      "facing=west,heat=2": {
+        "model": "create_eureka:block/rotation_engine_2",
+        "y": 270
+      },
+      "facing=west,heat=3": {
+        "model": "create_eureka:block/rotation_engine_3",
+        "y": 270
+      },
+      "facing=west,heat=4": {
+        "model": "create_eureka:block/rotation_engine_4",
+        "y": 270
+      }
+    }
+  }

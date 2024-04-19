@@ -3,32 +3,32 @@ loaderVersion = "[${forge_version},)"
 license = "CC0-1.0"
 
 [[mods]]
-modId = "create_eureka"
-version = "${version}"
-displayName = "Create: Eureka!"
-authors = "FixerSchis"
-description = '''
-Integration between Create Mod and Valkyrien Skies: Eureka!
-'''
-logoFile = "icon.png"
+    modId = "create_eureka"
+    version = "${version}"
+    displayName = "Create: Eureka!"
+    authors = "FixerSchis"
+    description = '''
+    Integration between Create Mod and Valkyrien Skies: Eureka!
+    '''
+    logoFile = "icon.png"
 
 [[dependencies.create_eureka]]
-modId = "forge"
-mandatory = true
-versionRange = "[${forge_version},)"
-ordering = "NONE"
-side = "BOTH"
+    modId = "forge"
+    mandatory = true
+    versionRange = "[${forge_version},)"
+    ordering = "NONE"
+    side = "BOTH"
 
 [[dependencies.create_eureka]]
-modId = "minecraft"
-mandatory = true
-versionRange = "${minecraft_version}"
-ordering = "NONE"
-side = "BOTH"
+    modId = "minecraft"
+    mandatory = true
+    versionRange = "[${minecraft_version},)"
+    ordering = "NONE"
+    side = "BOTH"
 
 [[dependencies.create_eureka]]
-modId="create"
-mandatory=true
-versionRange="${create_version}"
-ordering="NONE"
-side="BOTH"
+    modId = "create"
+    mandatory = true
+    versionRange = "[${create_version},)"
+    ordering = "NONE"
+    side = "BOTH"

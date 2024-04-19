@@ -1,17 +1,36 @@
 package dev.schis.create_eureka;
 
+import static com.simibubi.create.foundation.data.ModelGen.customItemModel;
+import static com.simibubi.create.foundation.data.TagGen.axeOrPickaxe;
+import static dev.schis.create_eureka.content.RotationEngineBlock.HEAT;
+
 import com.simibubi.create.foundation.data.CreateRegistrate;
+import com.simibubi.create.foundation.data.SharedProperties;
 import com.tterrag.registrate.util.entry.BlockEntry;
 
-import net.minecraft.world.level.block.Block;
+import dev.schis.create_eureka.content.RotationEngineBlock;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.world.level.material.MapColor;
 
 public class CreateEurekaBlocks {
-	public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(CreateEurekaMod.MOD_ID);
+	private static final CreateRegistrate REGISTRATE = CreateEurekaMod.getRegistrate();
 
-	public static final BlockEntry<Block> EXAMPLE_BLOCK = REGISTRATE.block("example_block", Block::new).register();
+	public static final BlockEntry<RotationEngineBlock> ROTATION_ENGINE = REGISTRATE
+			.block("rotation_engine", RotationEngineBlock::new)
+			.initialProperties(SharedProperties::stone)
+			.properties(p -> p
+					.noOcclusion()
+					.mapColor(MapColor.DEEPSLATE)
+					.requiresCorrectToolForDrops()
+					.strength(3.5f)
+					.lightLevel(s -> s.getValue(HEAT) * 3))
+			.addLayer(() -> RenderType::cutoutMipped)
+			.transform(axeOrPickaxe())
+			.item()
+			.transform(customItemModel())
+			.register();
 
-	public static void init() {
-		// load the class and register everything
+	public static void register() {
 		CreateEurekaMod.LOGGER.info("Registering blocks for " + CreateEurekaMod.NAME);
 	}
 }
