@@ -49,9 +49,9 @@ public class RotationEngineBlockEntity extends KineticBlockEntity {
                 CreateEurekaMod.LOGGER.info("Found Ship");
                 EurekaShipControl shipControl = ship.getAttachment(EurekaShipControl.class);
                 if (shipControl != null) {
-                    CreateEurekaMod.LOGGER.info("Found Ship Control");
+                    // CreateEurekaMod.LOGGER.info("Found Ship Control");
                     float effectiveHeat = Math.abs(getSpeed()) / 256f;
-                    CreateEurekaMod.LOGGER.info("Effective Heat: ", effectiveHeat);
+                    // CreateEurekaMod.LOGGER.info("Effective Heat: ", effectiveHeat);
 
                     shipControl.setPowerLinear(shipControl.getPowerLinear() + lerp(
                             EurekaConfig.SERVER.getEnginePowerLinearMin(),
