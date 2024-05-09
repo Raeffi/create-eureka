@@ -26,7 +26,7 @@ public class CreateEurekaBlocks {
 					.strength(3.5f)
 					.lightLevel(s -> s.getValue(HEAT) * 3))
 			.addLayer(() -> RenderType::cutoutMipped)
-			.transform(BlockStressDefaults.setImpact(8.0))
+			.transform(BlockStressDefaults.setImpact(32.0))
 			.transform(axeOrPickaxe())
 			.item()
 			.transform(customItemModel())
