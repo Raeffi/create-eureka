@@ -43,15 +43,15 @@ public class RotationEngineBlockEntity extends KineticBlockEntity {
             return;
 
         if (Math.abs(getSpeed()) > 0) {
-            CreateEurekaMod.LOGGER.info("Setting speed:", getSpeed());
+            // CreateEurekaMod.LOGGER.info("Setting speed:", getSpeed());
             ServerShip ship = VSGameUtilsKt.getShipManagingPos((ServerLevel) getLevel(), this.getBlockPos());
             if (ship != null) {
-                CreateEurekaMod.LOGGER.info("Found Ship");
+                // CreateEurekaMod.LOGGER.info("Found Ship");
                 EurekaShipControl shipControl = ship.getAttachment(EurekaShipControl.class);
                 if (shipControl != null) {
-                    CreateEurekaMod.LOGGER.info("Found Ship Control");
+                    // CreateEurekaMod.LOGGER.info("Found Ship Control");
                     float effectiveHeat = Math.abs(getSpeed()) / 256f;
-                    CreateEurekaMod.LOGGER.info("Effective Heat: ", effectiveHeat);
+                    // CreateEurekaMod.LOGGER.info("Effective Heat: ", effectiveHeat);
 
                     shipControl.setPowerLinear(shipControl.getPowerLinear() + lerp(
                             EurekaConfig.SERVER.getEnginePowerLinearMin(),
